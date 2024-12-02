@@ -11,7 +11,7 @@ class categoria{
                                     $resultado = mysqli_query($cone,$sql);
                                     if(mysqli_fetch_row($resultado)){
 
-                                        echo"<script> alert('La categoría ya existe en el sistema');</script>";
+                                        echo"<script> alert('La categoría ya existe ');</script>";
 
                                     }else{
                                         $insertar ="insert into categoria values('$this->id_categoria','$this->categoria')";
